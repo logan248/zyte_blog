@@ -35,8 +35,8 @@ class ZyteSpider(scrapy.Spider):
 
         yield items
 
-        #next_page = f'https://www.zyte.com/blog/page/{ZyteSpider.page_number}/'
+        next_page = f'https://www.zyte.com/blog/page/{ZyteSpider.page_number}/'
 
-        #if ZyteSpider.page_number <= 20:
-        #    yield response.follow(next_page, callback=self.parse)
-        #    ZyteSpider.page_number += 1
+        if ZyteSpider.page_number <= 20:
+            yield response.follow(next_page, callback=self.parse)
+            ZyteSpider.page_number += 1
