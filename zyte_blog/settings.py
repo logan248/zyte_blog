@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'zyte_blog.spiders'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'zyte_blog (+http://www.yourdomain.com)'
 
-# scrapy_proxy_pool module
+# pip install scrapy_proxy_pool
 #PROXY_POOL_ENABLED = True
 #DOWNLOADER_MIDDLEWARES = {
 #    # ...
@@ -25,11 +25,11 @@ NEWSPIDER_MODULE = 'zyte_blog.spiders'
 #    # ...
 #}
 
-# scrapy-user-agents module
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
-    'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
-}
+# pip install scrapy-user-agents
+#DOWNLOADER_MIDDLEWARES = {
+#    'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+#    'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
+#}
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
